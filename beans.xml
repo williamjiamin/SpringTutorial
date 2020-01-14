@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="jungle" class="com.lexueoude.spring.test.Jungle">
+
+        <property name="largest">
+            <bean class="com.lexueoude.spring.test.Animal">
+                <property name="name" value="Juno"></property>
+                <property name="type" value="elephant"></property>
+            </bean>
+        </property>
+        <property name="animals">
+            <list>
+                <bean class="com.lexueoude.spring.test.Animal">
+                    <property name="name" value="birdy"></property>
+                    <property name="type" value="bird"></property>
+                </bean>
+
+                <bean class="com.lexueoude.spring.test.Animal">
+                    <property name="name" value="rabbitty"></property>
+                    <property name="type" value="rabbit"></property>
+                </bean>
+
+                <bean class="com.lexueoude.spring.test.Animal">
+                    <property name="name" value="wolfy"></property>
+                    <property name="type" value="wolf"></property>
+                </bean>
+
+                <bean class="com.lexueoude.spring.test.Animal">
+                    <property name="name" value="snaky"></property>
+                    <property name="type" value="snake"></property>
+                </bean>
+
+<!--                <ref bean="lion" />-->
+<!--                <ref bean="elephant" />-->
+<!--                <ref bean="bird" />-->
+<!--                <ref bean="rabbit" />-->
+<!--                <ref bean="wolf" />-->
+<!--                <ref bean="snake" />-->
+            </list>
+        </property>
+    </bean>
+
+<!--    <bean id="lion" class="com.lexueoude.spring.test.Animal">-->
+<!--        <property name="name" value="Leon"></property>-->
+<!--        <property name="type" value="lion"></property>-->
+<!--    </bean>-->
+
+<!--    <bean id="elephant" class="com.lexueoude.spring.test.Animal">-->
+<!--        <property name="name" value="Juno"></property>-->
+<!--        <property name="type" value="elephant"></property>-->
+<!--    </bean>-->
+
+<!--    <bean id="bird" class="com.lexueoude.spring.test.Animal">-->
+<!--        <property name="name" value="birdy"></property>-->
+<!--        <property name="type" value="bird"></property>-->
+<!--    </bean>-->
+
+<!--    <bean id="rabbit" class="com.lexueoude.spring.test.Animal">-->
+<!--        <property name="name" value="rabbitty"></property>-->
+<!--        <property name="type" value="rabbit"></property>-->
+<!--    </bean>-->
+
+<!--    <bean id="wolf" class="com.lexueoude.spring.test.Animal">-->
+<!--        <property name="name" value="wolfy"></property>-->
+<!--        <property name="type" value="wolf"></property>-->
+<!--    </bean>-->
+
+<!--    <bean id="snake" class="com.lexueoude.spring.test.Animal">-->
+<!--        <property name="name" value="snaky"></property>-->
+<!--        <property name="type" value="snake"></property>-->
+<!--    </bean>-->
+
+
+
+
+
+
+<!--    <bean id="basket" class="com.lexueoude.spring.test.FruitBasket">-->
+<!--        <constructor-arg value="William's Basket"></constructor-arg>-->
+<!--        <constructor-arg>-->
+<!--            <list>-->
+<!--                <value>Apple</value>-->
+<!--                <value>Banana</value>-->
+<!--                <value>Orange</value>-->
+<!--                <value>Pear</value>-->
+<!--                <value>Kiwi</value>-->
+<!--                <value>watermelon</value>-->
+<!--            </list>-->
+<!--        </constructor-arg>-->
+
+
+
+<!--    </bean>-->
+
+
+<!--    <bean id="person"-->
+<!--          class="com.lexueoude.spring.test.Person"-->
+<!--          scope="singleton" init-method="onCreate" destroy-method="onDestroy" factory-method="getInstance">-->
+<!--        <constructor-arg value="88888888"></constructor-arg>-->
+<!--        <constructor-arg value="William"></constructor-arg>-->
+<!--        <property name="incomeNum" value="2000"></property>-->
+<!--        <property name="address" ref="address"></property>-->
+
+<!--    </bean>-->
+
+<!--    <bean id="person2"-->
+<!--          class="com.lexueoude.spring.test.Person"-->
+<!--          scope="singleton" init-method="onCreate" destroy-method="onDestroy"-->
+<!--          factory-method="createPerson" factory-bean="personfactory">-->
+<!--        <constructor-arg value="88888888"></constructor-arg>-->
+<!--        <constructor-arg value="William"></constructor-arg>-->
+<!--        <property name="incomeNum" value="2000"></property>-->
+<!--        <property name="address" ref="address"></property>-->
+
+<!--    </bean>-->
+
+
+<!--    <bean id="address" class="com.lexueoude.spring.test.Address">-->
+<!--        <constructor-arg name="street" value="lexueoude"></constructor-arg>-->
+<!--        <constructor-arg name="postcode" value="1234567"></constructor-arg>-->
+<!--    </bean>-->
+
+
+<!--    <bean id="address2" class="com.lexueoude.spring.test.Address" p:street="China" p:postcode="100000">-->
+
+
+<!--    </bean>-->
+
+<!--    <bean id="personfactory" class="com.lexueoude.spring.test.PersonFactory"></bean>-->
+
+
+</beans>
